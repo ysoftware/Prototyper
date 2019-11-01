@@ -1,0 +1,39 @@
+STRUCTURE
+
+project
+    - lottie files
+        - steps
+    - image files
+
+steps and image files have tap areas with transitions 
+to other lottie file steps and image files
+
+IDEAS
+
+- scrobble locks you in the scene by the direction of scrolling
+- editing/presentation mode - long tap
+
+SCREENS
+
+- projects
+    - added projects
+    - new project
+
+- add files
+    - add lottie file
+    - add image file 
+
+- project viewer
+    - view files
+    - steps bar
+    - highlighted buttons
+
+    - add step button / tap the screen
+    - add transition
+    - delete step
+    - continue
+
+- transition editor
+    - animation
+    - skip to step
+    - is reversing

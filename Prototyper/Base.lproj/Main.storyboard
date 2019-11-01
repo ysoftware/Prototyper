@@ -20,26 +20,53 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eZR-zh-Tix" customClass="ProgressView" customModule="Prototyper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="838" width="374" height="4"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="Ev4-HU-JTR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfSections">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhE-aZ-AGU" customClass="SliderView" customModule="Prototyper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOv-Lg-TPZ">
+                                <rect key="frame" x="364" y="54" width="40" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="load:" destination="BYZ-38-t0r" eventType="touchUpInside" id="orN-6C-ecz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="dJW-UP-qgb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2DX-bI-fg4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sOv-Lg-TPZ" secondAttribute="trailing" constant="10" id="A4I-Sj-agk"/>
                             <constraint firstItem="IhE-aZ-AGU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KKc-Ly-U46"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IhE-aZ-AGU" secondAttribute="trailing" id="P3K-rZ-Jhy"/>
                             <constraint firstItem="IhE-aZ-AGU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S1L-Md-Bq6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eZR-zh-Tix" secondAttribute="trailing" constant="20" id="TEv-2B-OVe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IhE-aZ-AGU" secondAttribute="bottom" id="VRX-Ww-UXN"/>
+                            <constraint firstItem="eZR-zh-Tix" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dJh-Md-eoN"/>
+                            <constraint firstItem="sOv-Lg-TPZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dkK-Dv-2YN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eZR-zh-Tix" secondAttribute="bottom" constant="20" id="lFA-u3-Cdk"/>
                             <constraint firstItem="dJW-UP-qgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tNI-Nt-jKI"/>
                             <constraint firstItem="dJW-UP-qgb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vul-89-NqA"/>
+                            <constraint firstItem="sOv-Lg-TPZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="wxK-rW-aP0"/>
                             <constraint firstAttribute="bottom" secondItem="dJW-UP-qgb" secondAttribute="bottom" id="zIo-fn-MDX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="container" destination="dJW-UP-qgb" id="ja7-UU-rO6"/>
+                        <outlet property="progressView" destination="eZR-zh-Tix" id="aHy-Lx-ok8"/>
                         <outlet property="sliderView" destination="IhE-aZ-AGU" id="SMh-wK-cmM"/>
                     </connections>
                 </viewController>
