@@ -27,14 +27,16 @@ class LottieVC: UIViewController {
         super.viewDidLoad()
         
         setupViews()
-        setupAnimation(.named("a")!)
+//        setupAnimation(.named("a")!)
         setupActions()
     }
     
     // MARK: - Actions
     
     @IBAction func load(_ sender: Any) {
-        let types = ["public.json"]
+        FileService.getList()
+        
+        let types = ["public.json", "com.pkware.zip-archive"]
         let picker = UIDocumentPickerViewController(documentTypes: types, in: .import)
         picker.delegate = self
         picker.allowsMultipleSelection = false
@@ -80,6 +82,6 @@ extension LottieVC: UIDocumentPickerDelegate {
     func documentPicker(_ controller: UIDocumentPickerViewController,
                         didPickDocumentsAt urls: [URL]) {
         
-        urls.first.flatMap { setupAnimation(Animation.filepath($0.path)!) }
+        _ = urls.first.flatMap { FileService.importFile($0) }
     }
 }

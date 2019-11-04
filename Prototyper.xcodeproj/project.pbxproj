@@ -19,6 +19,11 @@
 		1F932F842340ACF5000BD1A1 /* AutoLayoutUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F932F822340ACF4000BD1A1 /* AutoLayoutUtils.swift */; };
 		1F932F852340ACF5000BD1A1 /* PinConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F932F832340ACF5000BD1A1 /* PinConstraints.swift */; };
 		1FBFC3D0234123A600857663 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFC3CF234123A600857663 /* ProgressBar.swift */; };
+		1FEDFDAF236F29D6004D09CC /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 1FEDFDAE236F29D6004D09CC /* ZIPFoundation */; };
+		1FEDFDB1236F2A6A004D09CC /* ViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEDFDB0236F2A6A004D09CC /* ViewConfig.swift */; };
+		1FEDFDB3236F2AAD004D09CC /* UIControlClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEDFDB2236F2AAD004D09CC /* UIControlClosure.swift */; };
+		1FEDFDB6236F2AE7004D09CC /* appendAttributedString in Frameworks */ = {isa = PBXBuildFile; productRef = 1FEDFDB5236F2AE7004D09CC /* appendAttributedString */; };
+		1FEDFDB8236F2BA1004D09CC /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEDFDB7236F2BA1004D09CC /* FileService.swift */; };
 		1FFCA12723412AFD005D332A /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFCA12623412AFD005D332A /* AnimationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +41,9 @@
 		1F932F822340ACF4000BD1A1 /* AutoLayoutUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutUtils.swift; sourceTree = "<group>"; };
 		1F932F832340ACF5000BD1A1 /* PinConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinConstraints.swift; sourceTree = "<group>"; };
 		1FBFC3CF234123A600857663 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		1FEDFDB0236F2A6A004D09CC /* ViewConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfig.swift; sourceTree = "<group>"; };
+		1FEDFDB2236F2AAD004D09CC /* UIControlClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlClosure.swift; sourceTree = "<group>"; };
+		1FEDFDB7236F2BA1004D09CC /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		1FFCA12623412AFD005D332A /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +53,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F84816F2340A740005D46DF /* Lottie in Frameworks */,
+				1FEDFDB6236F2AE7004D09CC /* appendAttributedString in Frameworks */,
+				1FEDFDAF236F29D6004D09CC /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +107,8 @@
 		1F932F872340AD00000BD1A1 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				1FEDFDB2236F2AAD004D09CC /* UIControlClosure.swift */,
+				1FEDFDB0236F2A6A004D09CC /* ViewConfig.swift */,
 				1F932F822340ACF4000BD1A1 /* AutoLayoutUtils.swift */,
 				1F932F832340ACF5000BD1A1 /* PinConstraints.swift */,
 			);
@@ -123,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				1FFCA12623412AFD005D332A /* AnimationManager.swift */,
+				1FEDFDB7236F2BA1004D09CC /* FileService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -145,6 +158,8 @@
 			name = Prototyper;
 			packageProductDependencies = (
 				1F84816E2340A740005D46DF /* Lottie */,
+				1FEDFDAE236F29D6004D09CC /* ZIPFoundation */,
+				1FEDFDB5236F2AE7004D09CC /* appendAttributedString */,
 			);
 			productName = Prototyper;
 			productReference = 1F8481562340A670005D46DF /* Prototyper.app */;
@@ -176,6 +191,8 @@
 			mainGroup = 1F84814D2340A670005D46DF;
 			packageReferences = (
 				1F84816D2340A740005D46DF /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				1FEDFDAD236F29D6004D09CC /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				1FEDFDB4236F2AE7004D09CC /* XCRemoteSwiftPackageReference "appendAttributedString" */,
 			);
 			productRefGroup = 1F8481572340A670005D46DF /* Products */;
 			projectDirPath = "";
@@ -207,10 +224,13 @@
 			files = (
 				1F84815E2340A671005D46DF /* LottieVC.swift in Sources */,
 				1F8481712340AA0E005D46DF /* SliderView.swift in Sources */,
+				1FEDFDB8236F2BA1004D09CC /* FileService.swift in Sources */,
 				1F932F842340ACF5000BD1A1 /* AutoLayoutUtils.swift in Sources */,
 				1F84815A2340A671005D46DF /* AppDelegate.swift in Sources */,
 				1FFCA12723412AFD005D332A /* AnimationManager.swift in Sources */,
+				1FEDFDB3236F2AAD004D09CC /* UIControlClosure.swift in Sources */,
 				1F932F852340ACF5000BD1A1 /* PinConstraints.swift in Sources */,
+				1FEDFDB1236F2A6A004D09CC /* ViewConfig.swift in Sources */,
 				1F84815C2340A671005D46DF /* SceneDelegate.swift in Sources */,
 				1FBFC3D0234123A600857663 /* ProgressBar.swift in Sources */,
 			);
@@ -422,6 +442,22 @@
 				minimumVersion = 3.1.3;
 			};
 		};
+		1FEDFDAD236F29D6004D09CC /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.9;
+			};
+		};
+		1FEDFDB4236F2AE7004D09CC /* XCRemoteSwiftPackageReference "appendAttributedString" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ysoftware/appendAttributedString";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -429,6 +465,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1F84816D2340A740005D46DF /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		1FEDFDAE236F29D6004D09CC /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FEDFDAD236F29D6004D09CC /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		1FEDFDB5236F2AE7004D09CC /* appendAttributedString */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FEDFDB4236F2AE7004D09CC /* XCRemoteSwiftPackageReference "appendAttributedString" */;
+			productName = appendAttributedString;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
