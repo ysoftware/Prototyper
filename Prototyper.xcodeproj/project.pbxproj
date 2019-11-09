@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F6A5B3323774B6E002FF531 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A5B3223774B6E002FF531 /* ImageProvider.swift */; };
 		1F84815A2340A671005D46DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8481592340A671005D46DF /* AppDelegate.swift */; };
 		1F84815C2340A671005D46DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F84815B2340A671005D46DF /* SceneDelegate.swift */; };
 		1F84815E2340A671005D46DF /* LottieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F84815D2340A671005D46DF /* LottieVC.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F6A5B3223774B6E002FF531 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
 		1F8481562340A670005D46DF /* Prototyper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototyper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8481592340A671005D46DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F84815B2340A671005D46DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				1FFCA12623412AFD005D332A /* AnimationManager.swift */,
 				1FEDFDB7236F2BA1004D09CC /* FileService.swift */,
+				1F6A5B3223774B6E002FF531 /* ImageProvider.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				1FFCA12723412AFD005D332A /* AnimationManager.swift in Sources */,
 				1FEDFDB3236F2AAD004D09CC /* UIControlClosure.swift in Sources */,
 				1F932F852340ACF5000BD1A1 /* PinConstraints.swift in Sources */,
+				1F6A5B3323774B6E002FF531 /* ImageProvider.swift in Sources */,
 				1FEDFDB1236F2A6A004D09CC /* ViewConfig.swift in Sources */,
 				1F84815C2340A671005D46DF /* SceneDelegate.swift in Sources */,
 				1FBFC3D0234123A600857663 /* ProgressBar.swift in Sources */,
@@ -377,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = S422Q897FZ;
 				INFOPLIST_FILE = Prototyper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -396,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = S422Q897FZ;
 				INFOPLIST_FILE = Prototyper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

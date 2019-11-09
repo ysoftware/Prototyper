@@ -91,13 +91,14 @@ enum FileService {
         return false
     }
     
-    static func loadFile(_ name: String) {
-        
+    static func loadFile(at path: String) -> Data? {
+        manager.contents(atPath: path)
     }
     
     private static func getCacheDir() -> URL {
         let temp = manager.urls(for: .cachesDirectory,
                                 in: .userDomainMask).first!
+        
         let allFiles = try? manager.contentsOfDirectory(atPath: temp.path)
         if let files = allFiles {
             for file in files {
@@ -108,13 +109,26 @@ enum FileService {
         return temp
     }
     
-    static func getList() -> [String] {
-        let fileUrl = documentsUrl.appendingPathComponent(filesPath)
-        let list = try? manager.contentsOfDirectory(atPath: fileUrl.path)
-        
-        listFiles(at: fileUrl.path)
-        
-        return list ?? []
+    static func removeAll() {
+        do {
+            let url = documentsUrl.appendingPathComponent(filesPath)
+            try manager.removeItem(at: url)
+        }
+        catch {
+            print(error)
+        }
+    }
+    
+    static func getList() -> [(String, URL)] {
+        let dirUrl = documentsUrl.appendingPathComponent(filesPath)
+        do {
+            let names = try manager.contentsOfDirectory(atPath: dirUrl.path)
+            return names.map { ($0, dirUrl.appendingPathComponent($0)) }
+        }
+        catch {
+            print(error)
+            return []
+        }
     }
     
     private static func listFiles(at path: String, level: Int = 0) {
